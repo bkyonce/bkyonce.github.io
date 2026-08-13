@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Buturo Bartolomei's cybersecurity homelab build log."><meta name="theme-color" content="#09090b"><title>Homelab | Buturo Bartolomei</title><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/css/styles.css"><script defer src="../assets/js/main.js"></script></head>
+<body>
+  <header class="site-header"><div class="shell nav-wrap"><a class="brand" href="../" aria-label="Buturo Bartolomei home">BB<span>.</span></a><nav aria-label="Main navigation"><a href="./">Homelab</a><a href="../experience/">Experience</a><a href="../notes/">Notes</a><a class="nav-contact" href="mailto:buturo@umich.edu">Contact</a></nav></div></header>
+  <main>
+    <section class="page-hero shell"><p class="eyebrow">Homelab / Build log</p><h1>A small lab built for serious repetition.</h1><p>This is a living record of the architecture, decisions, tests, failures, and lessons behind my security environment. Entries distinguish completed work from future plans.</p></section>
+    <section class="section shell"><div class="section-label"><span>01</span><p>Architecture</p><i></i></div>
+      <div class="architecture" aria-label="Homelab architecture diagram"><div><small>Boundary</small><strong>Home internet</strong></div><span>→</span><div class="accent"><small>Control</small><strong>Managed switch</strong></div><span>→</span><div><small>Compute</small><strong>Mini PC host</strong></div><span>→</span><div><small>Workloads</small><strong>Isolated lab VMs</strong></div></div>
+      <div class="callout"><strong>Design constraint</strong><p>Experiments should remain isolated from household devices. Every change should be reversible, documented, and tied to a learning objective.</p></div>
+    </section>
+    <section class="section shell"><div class="section-label"><span>02</span><p>Build phases</p><i></i></div><div class="timeline">
+      <article><div class="timeline-num">01</div><div><div class="card-topline"><h2>Foundation</h2><span class="pill">Building</span></div><p>Inventory hardware, update firmware, establish a management plan, and document a clean baseline.</p></div></article>
+      <article><div class="timeline-num">02</div><div><div class="card-topline"><h2>Segmentation</h2><span class="pill">Planned</span></div><p>Use the managed switch to separate trusted devices, lab systems, and intentionally vulnerable targets.</p></div></article>
+      <article><div class="timeline-num">03</div><div><div class="card-topline"><h2>Visibility</h2><span class="pill">Planned</span></div><p>Centralize logs, establish normal behavior, and create repeatable detections for controlled lab activity.</p></div></article>
+      <article><div class="timeline-num">04</div><div><div class="card-topline"><h2>Cloud bridge</h2><span class="pill">Roadmap</span></div><p>Connect selected workloads to cloud security services while preserving cost and access boundaries.</p></div></article>
+    </div></section>
+    <section class="section shell"><div class="section-label"><span>03</span><p>Documentation standard</p><i></i></div><div class="principles compact"><article><h3>Objective</h3><p>What capability or question is this change intended to test?</p></article><article><h3>Evidence</h3><p>What logs, screenshots, configuration, or result demonstrate the outcome?</p></article><article><h3>Reflection</h3><p>What failed, what changed, and what will I do differently next time?</p></article></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><a class="brand" href="../">BB<span>.</span></a><p>Security, systems, and continuous learning.</p></div><div class="footer-links"><a href="./">Homelab</a><a href="../experience/">Experience</a><a href="mailto:buturo@umich.edu">Email</a></div><p class="copyright">© <span data-current-year>2026</span> Buturo Bartolomei</p></div></footer>
+</body></html>
