@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Buturo Bartolomei, a University of Michigan computer science student. Technical support, human-centered security, research involvement, and community work.">
-  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Buturo Bartolomei, University of Michigan computer science student. Practical, privacy-conscious AI workflows for small businesses in downtown Ann Arbor, plus security and research work.">
+  <meta name="theme-color" content="#fbfaf9">
+  <meta property="og:title" content="Buturo Bartolomei">
+  <meta property="og:description" content="Computer science student at the University of Michigan. AI workflow pilots for downtown Ann Arbor leasing offices, restaurants, and bars.">
+  <meta property="og:type" content="website">
   <title>Buturo Bartolomei</title>
   <link rel="icon" href="assets/monogram.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/portfolio.css">
@@ -16,58 +19,98 @@
     <header class="sidebar">
       <div>
         <a class="monogram" href="#about" aria-label="Buturo Bartolomei, about">bb.</a>
-        <p class="eyebrow intro-label">Hello, I'm</p>
         <h1><a href="#about">Buturo<br> Bartolomei</a></h1>
         <p class="role">Computer science student<br> University of Michigan</p>
         <p class="location">Ann Arbor, Michigan</p>
         <nav aria-label="Primary navigation">
-          <a href="#about" aria-current="location"><span>01</span> About</a>
-          <a href="#experience"><span>02</span> Experience</a>
-          <a href="#projects"><span>03</span> Projects</a>
-          <a href="#education"><span>04</span> Education</a>
-          <a href="#community"><span>05</span> Community</a>
+          <a href="#about" aria-current="location">About</a>
+          <a href="#ai-business">AI for businesses</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#community">Community</a>
         </nav>
       </div>
       <div class="sidebar-bottom">
-        <div class="social-links"><a href="mailto:buturo@umich.edu">Email <span aria-hidden="true">↗</span></a><a href="https://github.com/bkyonce">GitHub <span aria-hidden="true">↗</span></a></div>
+        <div class="social-links"><a href="mailto:buturo@umich.edu">Email</a><a href="https://github.com/bkyonce">GitHub</a></div>
         <button id="theme-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
       </div>
     </header>
     <main id="main" tabindex="-1">
       <section id="about" aria-labelledby="about-title">
-        <h2 class="eyebrow" id="about-title">About</h2>
+        <h2 id="about-title">About</h2>
         <div class="about-copy">
-          <p>I'm a first-year computer science student at the <a href="https://umich.edu/">University of Michigan</a>, interested in how technology works and how people experience it.</p>
+          <p>I'm a first-year computer science student at the <a href="https://umich.edu/">University of Michigan</a>, focused on privacy, security, and the careful use of AI. I like work where good engineering and clear communication both matter.</p>
           <p>I work as a Tech Help Consultant with U-M Information and Technology Services and am part of the <a href="https://spilab.io/">Security Privacy Interaction Lab</a>. I'm also a member of WolvSec, where I've contributed ideas for an upcoming capture-the-flag competition.</p>
-          <p>Right now, I'm focused on building a strong foundation in C++ and discrete mathematics. Outside of school, I enjoy jazz piano, music, and staying active.</p>
+          <p>Right now I'm building a foundation in C++ and discrete mathematics, and developing practical AI workflows for small businesses in downtown Ann Arbor. Outside of school, I play jazz piano.</p>
         </div>
-        <div class="about-links"><a class="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="quiet-link" href="mailto:buturo@umich.edu">Get in touch <span aria-hidden="true">↗</span></a></div>
+        <div class="about-links"><a class="button" href="#ai-business">See how I help local businesses</a><a class="quiet-link" href="mailto:buturo@umich.edu">Get in touch</a></div>
+      </section>
+      <section id="ai-business" aria-labelledby="ai-title">
+        <h2 id="ai-title">AI for downtown businesses</h2>
+        <p class="lead">I help small downtown Ann Arbor teams save time on repeat work, such as answering the same questions, scheduling, and drafting replies, with a person approving anything sensitive. I'm running short pilots now.</p>
+        <div class="offers">
+          <article class="offer">
+            <h3>Leasing offices and brokerages</h3>
+            <p>Leasing season brings the same questions all day. I set up an assistant that drafts replies and keeps tours moving.</p>
+            <ul>
+              <li>Drafted answers on availability, pricing, pets, parking, and tour times</li>
+              <li>Tour booking and lead follow-up</li>
+              <li>Maintenance request triage</li>
+            </ul>
+            <p class="guardrail">AI never screens, scores, or denies applicants. A person approves anything about eligibility, and replies stay consistent for every inquirer.</p>
+            <p class="basis">Grounded in frontline support work: clear written answers, documented steps, and knowing when to escalate.</p>
+          </article>
+          <article class="offer">
+            <h3>Restaurants and bars</h3>
+            <p>Event weekends swing volume. I turn your sales history and the local event calendar into a plan your team can use.</p>
+            <ul>
+              <li>A one-page staffing and prep forecast</li>
+              <li>Review-reply drafts</li>
+              <li>An FAQ assistant for hours, reservations, and private events</li>
+            </ul>
+            <p class="guardrail">A person verifies every allergen detail before it reaches a guest.</p>
+            <p class="basis">Informed by taproom shifts in Ann Arbor, where I saw how event-driven demand strains a small team.</p>
+          </article>
+        </div>
+        <h3 class="steps-title">How a pilot works</h3>
+        <ol class="steps">
+          <li>We talk for 20 minutes and pick one repeat task.</li>
+          <li>I run a 30-day pilot on one location. Scope and data handling are agreed in writing.</li>
+          <li>We review response times and hours saved, then decide whether to continue.</li>
+        </ol>
+        <p class="fine-print">Customer and applicant data stays out of consumer chat tools, and my samples use synthetic data. I don't give legal advice; anything with legal requirements goes to a qualified professional.</p>
+        <div class="cta-row">
+          <a class="button" href="mailto:buturo@umich.edu?subject=AI%20pilot%20inquiry">Start a conversation</a>
+          <p class="disclaimer">An independent student project, not affiliated with or endorsed by the University of Michigan.</p>
+        </div>
       </section>
       <section id="experience" aria-labelledby="experience-title">
-        <h2 class="eyebrow" id="experience-title">Experience & research</h2>
+        <h2 id="experience-title">Experience and research</h2>
         <article class="entry">
-          <div class="entry-heading"><h3>Tech Help Consultant</h3><p class="date">Aug 2026 – Present</p></div>
-          <p class="organization">University of Michigan · Information and Technology Services</p>
+          <div class="entry-heading"><h3>Tech Help Consultant</h3><p class="date">Aug 2026 to present</p></div>
+          <p class="organization">University of Michigan, Information and Technology Services</p>
           <p>Provide frontline support for account, software, device, and connectivity issues. Document troubleshooting steps, explain solutions clearly, and escalate issues when needed.</p>
           <ul class="tags" aria-label="Areas of work"><li>Technical support</li><li>Troubleshooting</li><li>Communication</li></ul>
         </article>
         <article class="entry">
           <div class="entry-heading"><h3>SPI Lab</h3><p class="date">Current involvement</p></div>
-          <p class="organization"><a href="https://spilab.io/">Security Privacy Interaction Lab <span aria-hidden="true">↗</span></a> · University of Michigan</p>
+          <p class="organization"><a href="https://spilab.io/">Security Privacy Interaction Lab</a>, University of Michigan</p>
           <p>Member of a research community studying privacy, security, and people's interactions with technology. My interests include making security and privacy easier to understand and use.</p>
           <ul class="tags" aria-label="Interests"><li>Human-centered security</li><li>Privacy</li></ul>
         </article>
         <article class="entry">
-          <div class="entry-heading"><h3>Support & Taproom Associate</h3><p class="date">Apr – Aug 2026</p></div>
-          <p class="organization">Mothfire Brewing Company · Ann Arbor</p>
+          <div class="entry-heading"><h3>Support and Taproom Associate</h3><p class="date">Apr to Aug 2026</p></div>
+          <p class="organization">Mothfire Brewing Company, Ann Arbor</p>
           <p>Supported busy taproom operations, coordinated with teammates, and helped customers while managing competing priorities.</p>
+          <ul class="tags" aria-label="Areas of work"><li>Hospitality operations</li><li>Teamwork</li></ul>
         </article>
       </section>
       <section id="projects" aria-labelledby="projects-title">
-        <h2 class="eyebrow" id="projects-title">Selected project</h2>
+        <h2 id="projects-title">Selected project</h2>
         <article class="entry project">
-          <p class="project-kicker">Independent project · 2026</p>
-          <h3>Blue Arbor Privacy & GRC Homelab</h3>
+          <p class="project-kicker">Independent project, 2026</p>
+          <h3>Blue Arbor Privacy and GRC Homelab</h3>
           <p>A student project connecting hands-on systems work with security and risk documentation. The lab uses Proxmox, OPNsense, and Kali Linux; Blue Arbor is a fictional company used to give the documentation context.</p>
           <ul class="project-points"><li>Built the initial virtualized lab environment.</li><li>Created an inventory modeling eleven business systems.</li><li>Documented preliminary risks, controls, and design decisions.</li></ul>
           <p class="project-note">The company and its business systems are simulated. Public documentation uses synthetic data and distinguishes running components from planned work.</p>
@@ -76,23 +119,40 @@
         </article>
       </section>
       <section id="education" aria-labelledby="education-title">
-        <h2 class="eyebrow" id="education-title">Education & skills</h2>
+        <h2 id="education-title">Education and skills</h2>
         <article class="entry">
           <div class="entry-heading"><h3>University of Michigan</h3><p class="date">Expected May 2030</p></div>
-          <p class="organization">Computer Science · College of Literature, Science, and the Arts</p>
+          <p class="organization">Computer Science, College of Literature, Science, and the Arts</p>
           <p>Michigan Research and Discovery Scholars (MRADS)<br>Undergraduate Research Opportunity Program (UROP)</p>
-          <div class="coursework"><h4>Current coursework · Fall 2026</h4><dl><div><dt>EECS 183</dt><dd>Programming in C++</dd></div><div><dt>EECS 203</dt><dd>Discrete Mathematics · Advanced Topics</dd></div></dl></div>
-          <div class="skills-grid"><div><h4>Programming</h4><p>C++ fundamentals, functions, arrays, debugging, and testing.</p></div><div><h4>Systems & tools</h4><p>Proxmox, OPNsense, Kali Linux, Git, and GitHub.</p></div></div>
+          <div class="coursework"><h4>Current coursework, Fall 2026</h4><dl><div><dt>EECS 183</dt><dd>Programming in C++</dd></div><div><dt>EECS 203</dt><dd>Discrete Mathematics, Advanced Topics</dd></div></dl></div>
+          <div class="skills-grid"><div><h4>Programming</h4><p>C++ fundamentals, functions, arrays, debugging, and testing.</p></div><div><h4>Systems and tools</h4><p>Proxmox, OPNsense, Kali Linux, Git, and GitHub.</p></div></div>
           <div class="certification"><strong>CompTIA Security+</strong><span>Earned August 2026</span></div>
         </article>
       </section>
       <section id="community" aria-labelledby="community-title">
-        <h2 class="eyebrow" id="community-title">Community & involvement</h2>
-        <article class="entry"><div class="entry-heading"><h3>WolvSec</h3><p class="date">2026 – Present</p></div><p class="organization">University of Michigan · Member</p><p>Member of the campus security community; contributed ideas for an upcoming capture-the-flag competition.</p></article>
-        <article class="entry"><div class="entry-heading"><h3>Washtenaw My Brother's Keeper</h3><p class="date">2022 – Present</p></div><p class="organization">Steering Committee Youth Representative</p><p>Contribute a youth perspective to community discussions and initiatives.</p></article>
-        <article class="entry"><div class="entry-heading"><h3>AAACF Youth Council</h3><p class="date">2024 – 2026</p></div><p class="organization">Ann Arbor Area Community Foundation</p><p>Helped evaluate community needs and allocate grants as part of the Youth Council.</p></article>
+        <h2 id="community-title">Community and involvement</h2>
+        <article class="entry"><div class="entry-heading"><h3>WolvSec</h3><p class="date">2026 to present</p></div><p class="organization">University of Michigan, member</p><p>Member of the campus security community; contributed ideas for an upcoming capture-the-flag competition.</p></article>
+        <article class="entry"><div class="entry-heading"><h3>Washtenaw My Brother's Keeper</h3><p class="date">2022 to present</p></div><p class="organization">Steering Committee Youth Representative</p><p>Contribute a youth perspective to community discussions and initiatives.</p></article>
+        <article class="entry"><div class="entry-heading"><h3>AAACF Youth Council</h3><p class="date">2024 to 2026</p></div><p class="organization">Ann Arbor Area Community Foundation</p><p>Helped evaluate community needs and allocate grants as part of the Youth Council.</p></article>
       </section>
-      <footer><p>Always happy to connect about learning, technology, or music.</p><a href="mailto:buturo@umich.edu">buturo@umich.edu <span aria-hidden="true">↗</span></a><div class="footer-meta"><span>© <span id="year">2026</span> Buturo Bartolomei</span><a href="#about">Back to top ↑</a></div></footer>
+      <footer>
+        <p>Always happy to connect about security, AI, or music.</p>
+        <a href="mailto:buturo@umich.edu">buturo@umich.edu</a>
+        <div class="song" id="song" aria-labelledby="song-week">
+          <div class="record" aria-hidden="true"></div>
+          <div>
+            <h4 id="song-week">Song of the week</h4>
+            <p class="song-title" id="song-title">My Funny Valentine</p>
+            <p class="song-artist" id="song-artist">Chet Baker</p>
+            <p class="song-links">
+              <a id="song-youtube" href="https://www.youtube.com/results?search_query=My%20Funny%20Valentine%20Chet%20Baker" target="_blank" rel="noopener noreferrer">Listen on YouTube <span aria-hidden="true">↗</span></a>
+              <a id="song-spotify" href="https://open.spotify.com/search/My%20Funny%20Valentine%20Chet%20Baker" target="_blank" rel="noopener noreferrer">Search on Spotify <span aria-hidden="true">↗</span></a>
+            </p>
+          </div>
+          <p class="song-note">A new pick every Monday, cycling through jazz standards and popular jazz favorites. <span id="song-next">Next week: Peace Piece by Bill Evans.</span></p>
+        </div>
+        <div class="footer-meta"><span>© <span id="year">2026</span> Buturo Bartolomei</span><a href="#about">Back to top ↑</a></div>
+      </footer>
     </main>
   </div>
 </body>

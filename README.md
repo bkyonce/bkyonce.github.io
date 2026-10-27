@@ -4,16 +4,20 @@ A minimal, responsive personal portfolio built with plain HTML, CSS, and JavaScr
 
 ## Structure
 
-- `index.html`: About, Experience & Research, Selected Project, Education & Skills, and Community.
+- `index.html`: About, AI for downtown businesses, Experience & Research, Selected Project, Education & Skills, Community, and a song of the week in the footer.
 - `assets/portfolio.css`: responsive layout, typography, light/dark themes, and print styles.
-- `assets/portfolio.js`: theme preference, active-section navigation, and footer year.
+- `assets/portfolio.js`: theme preference, active-section navigation, footer year, and the weekly song rotation.
 - `assets/monogram.svg`: favicon.
 
 No framework, package installation, build step, analytics, or external font service is required. The content remains readable without JavaScript.
 
 ## Editing
 
-Edit the section text in `index.html`. Change the colors in the CSS variables at the top of `assets/portfolio.css`. Avoid adding course solutions, private support records, unpublished research details, or operational homelab secrets.
+Edit the section text in `index.html`. Change the colors in the CSS variables at the top of `assets/portfolio.css` (`--accent` is for text and links, `--pink` is decorative only). Avoid adding course solutions, private support records, unpublished research details, or operational homelab secrets.
+
+## Song of the week
+
+The song list is the `songs` array in `assets/portfolio.js`: 52 entries of `[title, artist, year]`, with the year optional. The pick changes every Monday and cycles through the list from the `epoch` date (a Monday), so the cycle repeats yearly. Links go to YouTube and Spotify searches; nothing is embedded and no third-party scripts load. To add songs, keep the list at 52 entries (swap one out) so the yearly cycle stays aligned, and keep `Christmas Time Is Here` at position 50 for the week of December 21. The static song in `index.html` is a no-JavaScript fallback; update it occasionally.
 
 ## GitHub Pages
 
@@ -23,4 +27,4 @@ The October 2026 refresh preserves prior pages and assets for continuity; the cu
 
 ## Content maintenance
 
-Current snapshot: October 27, 2026. Keep coursework marked in progress until completed. SPI Lab is described as membership; add responsibilities or outcomes only when confirmed. WolvSec contribution is currently CTF idea development. Blue Arbor is a student homelab with a fictional company; modeled systems are not represented as deployed applications.
+Current snapshot: October 27, 2026. The AI for downtown businesses section describes an offer in its pilot phase: do not add client names, testimonials, results, or prices until they exist and the client has agreed, and keep the fair-housing and allergen guardrails and the not-affiliated-with-the-university line. Keep coursework marked in progress until completed. SPI Lab is described as membership; add responsibilities or outcomes only when confirmed. WolvSec contribution is currently CTF idea development. Blue Arbor is a student homelab with a fictional company; modeled systems are not represented as deployed applications.
