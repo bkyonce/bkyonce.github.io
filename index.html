@@ -48,38 +48,72 @@
       </section>
       <section id="ai-business" aria-labelledby="ai-title">
         <h2 id="ai-title">AI for downtown businesses</h2>
-        <p class="lead">I help small downtown Ann Arbor teams save time on repeat work, such as answering the same questions, scheduling, and drafting replies, with a person approving anything sensitive. I'm running short pilots now.</p>
-        <div class="offers">
-          <article class="offer">
-            <h3>Leasing offices and brokerages</h3>
-            <p>Leasing season brings the same questions all day. I set up an assistant that drafts replies and keeps tours moving.</p>
-            <ul>
-              <li>Drafted answers on availability, pricing, pets, parking, and tour times</li>
-              <li>Tour booking and lead follow-up</li>
-              <li>Maintenance request triage</li>
-            </ul>
-            <p class="guardrail">AI never screens, scores, or denies applicants. A person approves anything about eligibility, and replies stay consistent for every inquirer.</p>
-            <p class="basis">Grounded in frontline support work: clear written answers, documented steps, and knowing when to escalate.</p>
+        <p class="lead">I'm designing four small tools for Ann Arbor leasing offices and restaurants. Each one does a single job, shows where its answer came from, and leaves the final decision with your team.</p>
+        <p class="status"><strong>Status:</strong> all four tools are in the design stage and not yet built. Demos will use synthetic data, and I will not post client results until a client has agreed and there is something real to report.</p>
+
+        <h3 class="group-title">For leasing offices and brokerages</h3>
+        <div class="tools">
+          <article class="tool">
+            <div class="tool-head"><h4>Leasing Reply Assistant</h4><span class="badge">In design</span></div>
+            <p class="tool-offer">Answer repeat leasing questions from your approved property facts instead of looking up the same details every time.</p>
+            <dl class="tool-facts">
+              <div><dt>How it works</dt><dd>Staff pick a property, paste an inquiry, and see a draft next to the facts it used. Anything it can't answer is flagged, and a simple queue shows which replies and follow-ups are due. Staff copy the approved text into their own email.</dd></div>
+              <div><dt>You provide</dt><dd>Rent and fees, availability dates, pet, parking, and utility policies, tour steps, who owns each fact and when it was last checked, and a few replies you like.</dd></div>
+              <div><dt>You get</dt><dd>An inquiry summary, a reply draft, the source for each statement, a list of unanswered questions, and a follow-up status that staff control.</dd></div>
+              <div><dt>Example</dt><dd>A prospect asks about a cat, parking costs, and Saturday tours. The sheet covers the first two but has no Saturday schedule, so the tool answers those and flags the tour for staff instead of inventing a time.</dd></div>
+              <div><dt>It won't</dt><dd>Screen, rank, or score applicants, interpret leases, send anything on its own, or state a price or opening that is out of date.</dd></div>
+              <div><dt>How we'd measure it</dt><dd>Time to write replies by hand versus time to check and edit drafts for similar inquiries, plus how many drafts staff approve, how many need real corrections, and how many questions get missed.</dd></div>
+            </dl>
           </article>
-          <article class="offer">
-            <h3>Restaurants and bars</h3>
-            <p>Event weekends swing volume. I turn your sales history and the local event calendar into a plan your team can use.</p>
-            <ul>
-              <li>A one-page staffing and prep forecast</li>
-              <li>Review-reply drafts</li>
-              <li>An FAQ assistant for hours, reservations, and private events</li>
-            </ul>
-            <p class="guardrail">A person verifies every allergen detail before it reaches a guest.</p>
-            <p class="basis">Informed by taproom shifts in Ann Arbor, where I saw how event-driven demand strains a small team.</p>
+          <article class="tool">
+            <div class="tool-head"><h4>Maintenance Intake Organizer</h4><span class="badge">In design</span></div>
+            <p class="tool-offer">Turn scattered maintenance messages into clear requests your staff can review and route.</p>
+            <dl class="tool-facts">
+              <div><dt>How it works</dt><dd>Staff paste a request. The tool pulls out the unit, the issue, when it started, and permission to enter if it was given, then lists what's missing and suggests a category and queue. Staff confirm everything before it goes to your existing system.</dd></div>
+              <div><dt>You provide</dt><dd>Your category list, property identifiers, routing contacts, and your own escalation steps.</dd></div>
+              <div><dt>You get</dt><dd>A structured ticket, a checklist of missing details, a proposed route, a link back to the original message, and a draft acknowledgment. Possible duplicates are flagged, never merged quietly.</dd></div>
+              <div><dt>Example</dt><dd>"The kitchen sink has been leaking since yesterday." The tool records the issue and timing, marks the unit number and amount of leaking as missing, and suggests your plumbing queue.</dd></div>
+              <div><dt>It won't</dt><dd>Act as an emergency line, diagnose problems, give repair advice, dispatch anyone, promise response times, or decide who is responsible. Anything that looks urgent goes to a person.</dd></div>
+              <div><dt>How we'd measure it</dt><dd>Replay about 20 real or synthetic requests, including unclear, duplicate, and urgent ones, and compare ticket prep time and useful details captured. Every agreed urgent case has to reach a person, or the pilot pauses.</dd></div>
+            </dl>
           </article>
         </div>
+
+        <h3 class="group-title">For restaurants and bars</h3>
+        <div class="tools">
+          <article class="tool">
+            <div class="tool-head"><h4>Guest and Event Reply Assistant</h4><span class="badge">In design</span></div>
+            <p class="tool-offer">Prepare accurate replies to guest questions, private-event inquiries, and reviews in your venue's voice.</p>
+            <dl class="tool-facts">
+              <div><dt>How it works</dt><dd>Staff paste a question, inquiry, or review. The tool drafts a reply from your approved venue sheet. For events it also pulls out the date, group size, and event type, and lists what's still needed. Staff edit and paste it into their own email or event system.</dd></div>
+              <div><dt>You provide</dt><dd>Hours, how reservations work, room capacities, event packages and how long prices hold, accessibility details, who handles allergens and complaints, and a few sample replies.</dd></div>
+              <div><dt>You get</dt><dd>A reply draft, a panel showing the facts it used, a list of missing details, and a short event summary.</dd></div>
+              <div><dt>Example</dt><dd>A guest asks about a 40-person graduation dinner. The tool shows which rooms could fit by approved capacity, asks for the date and format, and notes that fitting a room doesn't mean it's open.</dd></div>
+              <div><dt>It won't</dt><dd>Confirm bookings, claim live availability, give binding quotes, offer refunds or discounts, or answer allergen questions. Those go to the person you name. It also won't invent a visit or apologize for an incident you haven't confirmed.</dd></div>
+              <div><dt>How we'd measure it</dt><dd>Start with one location and private events. Track time to an approved reply, how many drafts need only light edits, and wrong facts, and count replies actually sent separately from drafts generated.</dd></div>
+            </dl>
+          </article>
+          <article class="tool">
+            <div class="tool-head"><h4>Staffing and Prep Planner</h4><span class="badge">In design</span></div>
+            <p class="tool-offer">Give a manager a clear starting point for a shift plan, based on past demand and known events.</p>
+            <dl class="tool-facts">
+              <div><dt>How it works</dt><dd>Upload a spreadsheet of past sales or covers and enter upcoming events. The tool makes a printable weekly or weekend plan with expected volume, the history behind it, assumptions you can edit, and room for your own changes. The math is ordinary code, not an AI guess.</dd></div>
+              <div><dt>You provide</dt><dd>Eight to twelve weeks of dated sales or covers by service period (more for seasons), closed days, and upcoming events. For staffing, your own covers-per-labor-hour figure. For prep, item counts, recipe yields, stock on hand, and your buffer.</dd></div>
+              <div><dt>You get</dt><dd>A demand estimate with historical low and high, proposed labor hours, prep suggestions where the data supports them, and a plain explanation.</dd></div>
+              <div><dt>Example</dt><dd>120 expected covers at 15 covers per labor hour comes to 8 labor hours. That doesn't automatically mean two people for four hours, since roles, breaks, and coverage are the manager's call.</dd></div>
+              <div><dt>It won't</dt><dd>Schedule employees, run payroll, make food-safety decisions, or order supplies. If the data is thin, it says so and stays a simple worksheet.</dd></div>
+              <div><dt>How we'd measure it</dt><dd>Run it beside your own plan before it affects a shift, and compare it with a simple baseline on later dates it hasn't seen. Event days are checked separately. Accurate forecasts aren't proof of less waste, so that needs your prep and waste records.</dd></div>
+            </dl>
+          </article>
+        </div>
+
         <h3 class="steps-title">How a pilot works</h3>
         <ol class="steps">
-          <li>We talk for 20 minutes and pick one repeat task.</li>
-          <li>I run a 30-day pilot on one location. Scope and data handling are agreed in writing.</li>
-          <li>We review response times and hours saved, then decide whether to continue.</li>
+          <li>We talk for 20 minutes. You walk me through the last time you did the repetitive task, and we choose one tool, one location, and one person who reviews the output.</li>
+          <li>I set it up with your approved facts or a past export, test it on synthetic or de-identified examples, and run it next to your normal process for the first two weeks.</li>
+          <li>If it passes the checks we agreed on, your team uses it with review. At day 30 we look at time saved, errors, and effort, then decide whether to continue, change it, or stop.</li>
         </ol>
-        <p class="fine-print">Customer and applicant data stays out of consumer chat tools, and my samples use synthetic data. I don't give legal advice; anything with legal requirements goes to a qualified professional.</p>
+        <p class="fine-print">Customer and applicant data stays out of consumer chat tools, and my samples use synthetic data. Any outside service that touches real data is agreed with you first. I don't give legal advice; anything with legal requirements goes to a qualified professional.</p>
         <div class="cta-row">
           <a class="button" href="mailto:buturo@umich.edu?subject=AI%20pilot%20inquiry">Start a conversation</a>
           <p class="disclaimer">An independent student project, not affiliated with or endorsed by the University of Michigan.</p>

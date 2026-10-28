@@ -247,3 +247,23 @@ main:focus { outline: none; }
   a { text-decoration: none; }
   .tags li { border: 1px solid #ddd; }
 }
+
+/* Tool descriptions */
+.status { max-width: 62ch; margin: 18px 0 0; padding: 10px 14px; border-left: 2px solid var(--pink); background: var(--soft); font-size: 13.5px; color: var(--text); }
+.group-title { margin: 40px 0 16px; font-size: 20px; }
+.tools { display: grid; gap: 20px; }
+.tool { padding: 24px 24px 12px; border: 1px solid var(--line); border-top: 2px solid var(--pink); background: var(--surface); }
+.tool-head { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; margin-bottom: 8px; }
+.tool-head h4 { margin: 0; font-size: 20px; }
+.badge { flex: none; padding: 2px 9px; border-radius: 2px; background: var(--soft); color: var(--accent); font-size: 12px; }
+.tool-offer { margin: 0 0 16px; font-size: 15px; color: var(--text); }
+.tool-facts { margin: 0; }
+.tool-facts > div { display: grid; grid-template-columns: 150px 1fr; gap: 6px 20px; padding: 12px 0; border-top: 1px solid var(--line); }
+.tool-facts dt { font-size: 12.5px; font-weight: 600; color: var(--accent); }
+.tool-facts dd { margin: 0; font-size: 14px; line-height: 1.7; color: var(--muted); }
+@media (max-width: 700px) {
+  .tool-facts > div { grid-template-columns: 1fr; }
+  .tool-head { display: block; }
+  .badge { display: inline-block; margin-top: 6px; }
+}
+@media print { .tool { break-inside: avoid; } }
